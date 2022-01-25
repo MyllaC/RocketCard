@@ -11,5 +11,163 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-card);
+  height: 100%;
   font-family: 'Prompt', sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto; /*espaços laterais */
+  margin-right: auto;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+.container {
+  margin-top: 10vh;
+  margin-left: 25vw; /*espaços laterais */
+  margin-right: 10vh;
+  max-height: 500px;
+  max-width: 400px;
+}
+
+#bgCard {
+  background: var(--bg);
+  width: 16rem;
+  height: 32rem;
+  border-radius: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#card {
+  background: var(--bg-card);
+  width: 14rem;
+  height: 30rem;
+  border-radius: 1rem;
+}
+
+.container h2 {
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: small;
+  color: var(--text);
+  letter-spacing: 0.1rem;
+  word-break: keep-all;
+}
+
+/* CARD HEADER */
+
+#cardHeader {
+  display: flex;
+  place-items: center;
+  margin: 0.5rem;
+}
+
+#cardHeader span {
+  color: var(--text);
+  margin-left: 0.5rem;
+  font-size: medium;
+}
+
+#cardHeader img {
+  height: 2rem;
+  width: auto;
+  padding: 0.24rem;
+  border: 1px solid #c4c4c4;
+  border-radius: 50px;
+}
+
+/* CARD FOOTER */
+#cardFooter {
+  display: flex;
+  place-items: center;
+  justify-content: flex-end;
+  margin: 0.5rem;
+}
+
+#cardFooter img {
+  height: 2rem;
+  width: auto;
+}
+
+#cardFooter span {
+  color: var(--text);
+  margin-left: 0.5rem;
+  font-size: small;
+}
+
+/* USER IMAGE */
+
+.avatar img {
+  width: 20rem;
+  margin: 2rem 0rem 8rem 4rem;
+  position: relative;
+}
+
+.avatar > img {
+  /* o sinal de > pega a imagem que está no primeiro nível */
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover; /* imagem se adpata ao tamanho definido */
+
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* USAR DATA BOX */
+
+div#userData {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  color: var(--text);
+  position: absolute; /* permite criar níveis de empilhamento entre as imagens*/
+  top: 350px;
+  margin-left: 0.5rem;
+}
+
+ul {
+  list-style: none; /* para tirar as bolinhas */
+  padding: 1rem;
+  display: block;
+}
+
+/* CUSTOMIZAR CARD */
+
+#sideOpetion {
+  margin-top: 40vh;
+  margin-left: auto; /*espaços laterais */
+  margin-right: 50vh;
+  max-height: 500px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-items: center;
+  align-items: ce;
+}
+
+#sideOpetion h1 {
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+#sideOpetion button {
+  background-color: var(--bg);
+  color: var(--text);
+  border: none;
+  padding: 1rem 4rem 1rem 4rem;
+  border-radius: 1rem;
+
+  font-size: medium;
 }

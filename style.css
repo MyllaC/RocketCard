@@ -56,6 +56,7 @@ main {
   width: 14rem;
   height: 30rem;
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .container h2 {

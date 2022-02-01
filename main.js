@@ -56,7 +56,6 @@ function getGitHubProfileInfos() {
     })
   //o fetch vai na url da API e pegar o que o API responder
   //Promese (then()) é um recurso do JS para poder pegar respostas de alguma coisa
-  //Arrow function => é uma forma contraida da function
 }
 
 changeBackgroundColor()
